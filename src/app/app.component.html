@@ -8,10 +8,13 @@
 <div class="collapse navbar-collapse" id="mynav">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item">
-      <a class="nav-link" href="#Dashboard">Dashboard</a>
+      <a class="nav-link" routerLink="dashboard">Dashboard</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#About">About</a>
+      <a class="nav-link" routerLink="about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="contact-us">Contact Us</a>
     </li>
   </ul> 
   <form class="form-inline my-2 my-lg-0">
@@ -26,7 +29,5 @@
 </div>
 </nav>
 <div class="container-fluid">
-  <h1>Welcome to Angular!</h1>
+  <router-outlet></router-outlet>
 </div>
-<app-dashboard></app-dashboard>
-<app-about></app-about>
