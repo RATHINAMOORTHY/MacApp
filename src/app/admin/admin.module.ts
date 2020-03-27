@@ -4,7 +4,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { AboutComponent } from './about/about.component';
-
+import {ProjectComponent} from './project/project.component';
+import { DashboardService } from '../dashboard.service';
+import { ProjectService } from '../project.service';
 
 
 @NgModule({
@@ -12,7 +14,8 @@ import { AboutComponent } from './about/about.component';
     DashboardComponent,
     ContactUsComponent,
     MyProfileComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectComponent
   ],
   imports: [
     CommonModule
@@ -22,6 +25,8 @@ import { AboutComponent } from './about/about.component';
     ContactUsComponent,
     MyProfileComponent,
     AboutComponent
-  ]
+  ],
+  
+  providers: [DashboardService,ProjectService],
 })
 export class AdminModule { }
