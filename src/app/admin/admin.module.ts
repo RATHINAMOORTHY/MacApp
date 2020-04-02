@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import {ProjectComponent} from './project/project.component';
 import { DashboardService } from '../dashboard.service';
 import { ProjectService } from '../project.service';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -18,15 +19,16 @@ import { ProjectService } from '../project.service';
     ProjectComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,FormsModule
   ],
   exports:[
     DashboardComponent,
     ContactUsComponent,
     MyProfileComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectComponent
   ],
   
-  providers: [DashboardService,ProjectService],
+  providers: [DashboardService],
 })
 export class AdminModule { }
